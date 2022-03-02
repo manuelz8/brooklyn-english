@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+    font-family: "montserrat";
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+    margin: 0;
+}
+/*Menu*/
+    /*contact menu*/
+.navbar-section{
+    height: 80px;
+    width: 100%;
+    background-color: #1d1b238f;
+    border-bottom: white 1px solid;
+    position: fixed;
+    z-index: 10;
+}
+.navbar-section__contact{
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-top: 5px;
+}
+.navbar-section__contact span{
+    flex: 1;
+    text-align: right;
+}
+.navbar-section__contact a{
+    text-decoration: none;
+    font-family: "montserrat";
+    font-weight: 600;
+    color: white;
+    margin-left: 10px;
+    transition: 0.8s ease;
+}
+.navbar-section__contact a:hover{
+    color: #f7d200;
+}
+.navbar-section__contact img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.material-icons{
+    color: #f7d200;
+}
+    /*main menu*/
+.navbar-section__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 100px;
+}
+.navbar-section__container img{
+    width: 60px;
+    height: 30px;
+}
+.navbar-section__menu{
+    flex: 1;
+    text-align: right;
+}
+.navbar-section__menu-list{
+    list-style-type: none;
+    display: inline-flex;
+}
+.navbar-section__menu-list li{
+    margin-left: 20px;
+    text-align: center;
+    font-family: "montserrat";
+    font-weight: 600;
+    color: white;
+}
+.navbar-section__menu-list a{
+    text-decoration: none;
+    color: white;
+    transition: 0.8s ease;
+}
+.navbar-section__menu-list a:hover{
+    color:#f7d200;
+    
+}
+/*BODY*/
+.banner{
+    background-image: url(../assets/banner-background.svg);
+    background-size: cover;
+}
+.section-body{
+    margin: 0 100px;
+    min-height: 100vh;
+}
+.body-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.body-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.body__image-container img{
+    height: 600px;
+    width: 450px;
+}
+.body__text-container{
+    padding: 0 40px;
+}
+.body__text-container h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.body__text-container p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*Card*/
+.body-card{
+    display: inline-flex;
+    background-color: #dcd4c4;
+    border-radius: 20px;
+    color: black;
+    justify-content: space-around;
+}
+.body-card section{
+    width: 30%;
+
+}
+.body-card img{
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    bottom: -30px;
+    cursor: pointer;
+}
+.body-card h3, .body-card p{
+    color: black;
+}
+.body-card h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.body-card p{
+    text-align: justify;
+    font-size: 18px;
+}
+/*Section 1*/
+
+.section-1__container{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.section-1__container-text{
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+}
+.section-1__container-text h2{
+    text-align: center;
+    font-size: 40px;
+}
+.section-1-container-image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.section-1-container-image img{
+    width: 60%;
+}
+
+/*Section 2*/
+
+.section-2{
+    background-color: #1d1b23;
+}
+.section-2 h2{
+    margin: 0;
+    padding-top: 30px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.section-2__container{
+    margin:  20px 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section-2__container div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
+.section-2__container div img{
+    width: 150px;
+    cursor: pointer;
+}
+.section-2__container div h3{
+    font-size: 24px;
+    color: #f7d200;
+    margin: 0;
+    cursor: pointer;
+}
+.section-2__container div p{
+    margin: 20px;
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+}
+/*COURSES*/
+
+.courses{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.courses h2{
+    text-align: center;
+    font-size: 40px;
+    color: #1d1b23;
+}
+.courses__card-container{
+    display: flex;
+    flex-direction: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.courses-card{
+    width: 30%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #1d1b23;
+    border-radius: 10px;
+}
+.courses-card h2{
+    font-size: 30px;
+    color: #f7d200;
+    text-align: center;
+}
+.courses-card h3{
+    color: #f7d200;
+    text-align: center;
+    font-size: 24px;
+}
+
+.courses-card p{
+    color: white;
+    font-size: 18px;
+}
+
+.courses-card ul{
+    list-style: none;
+    padding: 0;
+}
+.courses-card li{
+    display: flex;
+    align-items: center;
+}
+.courses-card .material-icons{
+    margin-right: 10px;
+}
+
+.courses-card button{
+    color: #1d1b23;
+    background-color: #f7d200;
+    border: none;
+    width: 45%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+    transition: ease 0.5s;
+}
+
+.courses-card button:hover{
+    background-color: #bf0a30;
+}
+/*FORM*/
+
+.form-section{
+    background-color: #1d1b23;
+}
+.form-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+}
+.form{
+    width: 50%;
+}
+.form h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.form p{
+    font-size: 18px;
+    color: white;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-input{
+    outline: none;
+    border: none;
+}
+
+#nombre{
+    width: 45%;
+    padding: 15px;
+    margin: 10px 0;
+}
+#telefono{
+    width: 45%;
+    padding: 15px;
+    margin: 10px 0;
+}
+#email{
+    width: 100%;
+    padding: 15px;
+}
+
+#mensaje{
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+#submit{
+    background-color: #f7d200;
+    color: #1d1b23;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.form-image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-image img{
+    width: 50%;
+}
+/*FOOTER*/
+
+footer{
+    background-color: #1d1b23;
+    border-top: white solid 1px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer__contact-container{
+    width: 30%;
+}
+.footer__contact{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-top: 5px;
+    justify-content: center;
+}
+.footer__contact-container h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer__contact img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer__logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__logo img{
+    width: 60px;
+    height: 30px;
+}
+
+.footer__cellphone{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__cellphone h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer__cellphone a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease 0.8s;
+}
+
+.footer__cellphone a:hover{
+    color: #f7d200;
+}
